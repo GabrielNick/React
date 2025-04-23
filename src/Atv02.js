@@ -1,11 +1,17 @@
+import ContadorDePessoas from "./ContadorDePessoas";
 import { Link } from "react-router-dom";
+import "./Atv02.css";
 
-export default function Atv02() {
-  return (
-      <>
-      <h1>Atividade 2</h1>
-      <Link to="/">Voltar</Link>
-      </>
+const Atv02 = () => {
+    return (
+        <div className="atv02-container">
+            <h1 className="atv02-title">Atividade 2 - Contador de Pessoas</h1>
+            <div className="contador-card">
+                <ContadorDePessoas />
+            </div>
+            <Link className="atv02-link" to="/">Voltar</Link>
+        </div>
+    );
+};
 
-  );
-}
+export default Atv02;
