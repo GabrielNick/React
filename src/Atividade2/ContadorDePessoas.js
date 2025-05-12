@@ -1,8 +1,8 @@
 import { useState } from "react";
 import MyButton from "./MyButton";
 import "./ContadorDePessoas.css";
-import homemImg from "./img/homem.jpg";
-import mulherImg from "./img/mulher.jpg";
+import homemImg from "../img/homem.jpg";
+import mulherImg from "../img/mulher.jpg";
 
 const ContadorDePessoas = () => {
     const [homens, setHomens] = useState(0);
