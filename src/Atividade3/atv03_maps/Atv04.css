@@ -1,0 +1,37 @@
+.atv04-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #f9f9f9;
+    font-family: 'Segoe UI', sans-serif;
+    padding: 40px;
+}
+
+.atv04-title {
+    font-size: 2.2em;
+    margin-bottom: 20px;
+}
+
+.profile {
+    text-align: center;
+    margin: 20px;
+}
+
+.avatar {
+    border-radius: 50%;
+    margin: 10px;
+}
+
+.atv04-link {
+    margin-top: 40px;
+    font-size: 1.2em;
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.atv04-link:hover {
+    text-decoration: underline;
+}

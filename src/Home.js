@@ -11,7 +11,6 @@ const Home = () => {
                 <Link className="home-button" to="/Atividade1/atv01">Atividade 01</Link>
                 <Link className="home-button" to="/Atividade2/atv02">Atividade 02</Link>
                 <Link className="home-button" to="/Atividade3/atv03">Atividade 03</Link>
-                <Link className="home-button" to="/atv04">Atividade 04</Link>
             </div>
         </div>
     );
