@@ -3,16 +3,12 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100vh;
-  background: linear-gradient(to right, #3a1c71, #d76d77, #ffaf7b);
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   color: #111;
 }
 
 .atv01-title {
   font-size: 3em;
-  margin-top: -300px;
-  color: white;
 }
 
 .atv01-link {
@@ -20,10 +16,49 @@
   color: #6c2bd9;
   text-decoration: none;
   font-weight: bold;
-  margin-top: 3vh;
 }
 
 .atv01-link:hover {
   color: #8c4fff;
   text-decoration: underline;
+}
+
+.relogio-container {
+  font-size: 2.5rem;
+  font-family: 'Courier New', Courier, monospace;
+  color: #ffffff;
+  background-color: #1e1e1e;
+  padding: 20px 40px;
+  border-radius: 10px;
+  display: inline-block;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+
+}
+
+.atv01-letreiro {
+  font-size: 1.5em;
+  color: white;
+  background-color: #222;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px #000;
+  margin-top: 100px;
+  font-family: 'Courier New', Courier, monospace;
+  min-height: 2em;
+}
+
+.cursor {
+  display: inline-block;
+  width: 10px;
+  animation: blink 1s step-end infinite;
+  color: white;
+}
+
+@keyframes blink {
+  from, to {
+      opacity: 0;
+  }
+  50% {
+      opacity: 1;
+  }
 }

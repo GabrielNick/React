@@ -1,4 +1,4 @@
-import './Relogio.css';
+import './Atv01.css';
 import { useEffect, useState } from 'react';
 
 export default function Relogio() {

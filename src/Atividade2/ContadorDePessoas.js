@@ -1,6 +1,6 @@
 import { useState } from "react";
 import MyButton from "./MyButton";
-import "./ContadorDePessoas.css";
+import "./Atv02.css";
 import homemImg from "../img/homem.jpg";
 import mulherImg from "../img/mulher.jpg";
 

@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import './Letreiro.css';
+import './Atv01.css';
 
 export default function Letreiro() {
     const texto = "Bem-vindo à atividade 1!";

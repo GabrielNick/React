@@ -18,51 +18,42 @@ export default function Atv04() {
   return (
     <div className="page">
       <h1 className="main-title">Atividade Aula 11 - Componentes React</h1>
-      <Section>
+      <section>
         <ShapeEditor />
-      </Section>
+      </section>
 
-      <Section title="Eventos e Props">
+      <section title="Eventos e Props">
         <Toolbar
           onPlayMovie={() => alert('Playing!')}
           onUploadImage={() => alert('Uploading!')}
         />
-      </Section>
+      </section>
 
-      <Section title="Estados e Interações">
+      <section title="Estados e Interações">
         <Gallery />
         <Form />
-      </Section>
+      </section>
 
-      <Section title="Manipulação de Objetos e Estado">
+      <section title="Manipulação de Objetos e Estado">
         <MovingDot />
         <Form2 />
         <Form3 />
-      </Section>
+      </section>
 
-      <Section title="Listas e Mutações">
+      <section title="Listas e Mutações">
         <Counter />
         <List />
         <List2 />
         <CounterList />
-      </Section>
+      </section>
 
-      <Section title="Listas com Atualização de Estado">
+      <section title="Listas com Atualização de Estado">
         <List3 />
         <List4 />
         <BucketList />
-      </Section>
+      </section>
     </div>
   );
 }
 
-function Section({ title, children }) {
-  return (
-    <section className="section">
-      <h2 className="section-title">{title}</h2>
-      <div className="component-box">
-        {children}
-      </div>
-    </section>
-  );
-}
+

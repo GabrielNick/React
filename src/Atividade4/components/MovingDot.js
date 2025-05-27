@@ -1,4 +1,4 @@
-import React, { useState, useRef } from 'react';
+import { useState, useRef } from 'react';
 import '../Atv04.css';
 
 export default function MovingDot() {

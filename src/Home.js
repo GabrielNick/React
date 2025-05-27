@@ -12,6 +12,8 @@ const Home = () => {
                 <Link className="home-button" to="/Atividade2/atv02">Atividade 02</Link>
                 <Link className="home-button" to="/Atividade3/atv03">Atividade 03</Link>
                 <Link className="home-button" to="/Atividade4/atv04">Atividade 04</Link>
+                <Link className="home-button" to="/Atividade5/atv05">Atividade 05</Link>
+                <Link className="home-button" to="/Atividade6/atv06">Atividade 06</Link>
             </div>
         </div>
     );
