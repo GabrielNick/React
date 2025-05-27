@@ -1,4 +1,5 @@
 import './Atv04.css';
+import { Link } from "react-router-dom";
 import Toolbar from './components/Toolbar';
 import Gallery from './components/Gallery';
 import Counter from './components/Counter';
@@ -52,6 +53,7 @@ export default function Atv04() {
         <List4 />
         <BucketList />
       </section>
+      <Link className="atv03-link" to="/">Voltar</Link>
     </div>
   );
 }
