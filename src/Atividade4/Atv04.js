@@ -19,41 +19,26 @@ export default function Atv04() {
   return (
     <div className="page">
       <h1 className="main-title">Atividade Aula 11 - Componentes React</h1>
+      <ShapeEditor />
+      <Toolbar
+        onPlayMovie={() => alert('Playing!')}
+        onUploadImage={() => alert('Uploading!')}
+      />
+      <Gallery />
+      <Form />
+      <MovingDot />
+      <Form2 />
+      <Form3 />
+      <Counter />
       <section>
-        <ShapeEditor />
-      </section>
-
-      <section title="Eventos e Props">
-        <Toolbar
-          onPlayMovie={() => alert('Playing!')}
-          onUploadImage={() => alert('Uploading!')}
-        />
-      </section>
-
-      <section title="Estados e Interações">
-        <Gallery />
-        <Form />
-      </section>
-
-      <section title="Manipulação de Objetos e Estado">
-        <MovingDot />
-        <Form2 />
-        <Form3 />
-      </section>
-
-      <section title="Listas e Mutações">
-        <Counter />
         <List />
-        <List2 />
-        <CounterList />
       </section>
-
-      <section title="Listas com Atualização de Estado">
-        <List3 />
-        <List4 />
-        <BucketList />
-      </section>
-      <Link className="atv03-link" to="/">Voltar</Link>
+      <List2 />
+      <CounterList />
+      <List3 />
+      <List4 />
+      <BucketList />
+      <Link to="/">Voltar</Link>
     </div>
   );
 }

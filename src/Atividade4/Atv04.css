@@ -140,4 +140,41 @@ select {
   pointer-events: none;
 }
 
+.bucket-list {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  font-family: Arial, sans-serif;
+}
+
+.bucket-list h2 {
+  font-size: 20px;
+  margin-bottom: 16px;
+  color: #333;
+  text-align: center;
+  font-weight: bold;
+}
+
+.bucket-list h3 {
+  font-size: 16px;
+  color: #333;
+  font-weight: bold;
+}
+
+.bucket-list ul {
+  padding-left: 20px;
+  margin: 0 0 16px 0;
+}
+
+.bucket-list-item {
+  list-style-type: disc;
+}
+
+.bucket-list-item label {
+  display: inline-flex;
+  align-items: center;
+  font-weight: normal;
+  font-size: 14px;
+  color: #000;
+}
 

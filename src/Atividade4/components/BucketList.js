@@ -1,48 +1,60 @@
+// BucketList.js
 import { useState } from 'react';
+import '../Atv04.css';
 
-const initialItems = [
+const initialList = [
   { id: 0, title: 'Big Bellies', seen: false },
   { id: 1, title: 'Lunar Landscape', seen: false },
-  { id: 2, title: 'Terracotta Army', seen: true },
+  { id: 2, title: 'Terracotta Army', seen: true }
 ];
 
-export default function BucketList() {
-  const [myList, setMyList] = useState(initialItems);
-  const [yourList, setYourList] = useState(initialItems);
-
-  function handleToggle(list, setList, id) {
-    const updated = list.map((item) =>
-      item.id === id ? { ...item, seen: !item.seen } : item
-    );
-    setList(updated);
-  }
-
+function Item({ item, onChange }) {
   return (
-    <div className="component-container">
-      <h1>Art Bucket List</h1>
-      <h2>My list of art to see:</h2>
-      <List items={myList} onToggle={(id) => handleToggle(myList, setMyList, id)} />
-      <h2>Your list of art to see:</h2>
-      <List items={yourList} onToggle={(id) => handleToggle(yourList, setYourList, id)} />
-    </div>
+    <li className="bucket-list-item">
+      <label>
+        <input
+          type="checkbox"
+          checked={item.seen}
+          onChange={e => {
+            onChange({
+              ...item,
+              seen: e.target.checked
+            });
+          }}
+        />{' '}
+        {item.title}
+      </label>
+    </li>
   );
 }
 
-function List({ items, onToggle }) {
+export default function BucketList() {
+  const [myList, setMyList] = useState(initialList);
+  const [yourList, setYourList] = useState(initialList);
+
+  function handleMyChange(updatedItem) {
+    setMyList(myList.map(item => item.id === updatedItem.id ? updatedItem : item));
+  }
+
+  function handleYourChange(updatedItem) {
+    setYourList(yourList.map(item => item.id === updatedItem.id ? updatedItem : item));
+  }
+
   return (
-    <ul>
-      {items.map((item) => (
-        <li key={item.id}>
-          <label>
-            <input
-              type="checkbox"
-              checked={item.seen}
-              onChange={() => onToggle(item.id)}
-            />
-            {' '}{item.title}
-          </label>
-        </li>
-      ))}
-    </ul>
+    <div className="component-container bucket-list">
+      <h2>Art Bucket List</h2>
+      <h3>My list of art to see:</h3>
+      <ul>
+        {myList.map(item => (
+          <Item key={item.id} item={item} onChange={handleMyChange} />
+        ))}
+      </ul>
+      <h3>Your list of art to see:</h3>
+      <ul>
+        {yourList.map(item => (
+          <Item key={item.id} item={item} onChange={handleYourChange} />
+        ))}
+      </ul>
+    </div>
   );
 }

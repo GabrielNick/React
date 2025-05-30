@@ -1,5 +1,4 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-
 import Home from "./Home";
 import Atv01 from "./Atividade1/Atv01";
 import Atv02 from "./Atividade2/Atv02";
@@ -18,9 +17,8 @@ export default function minhasRotas() {
                 <Route path="/Atividade2/atv02" element={<Atv02/>} />
                 <Route path="/Atividade3/atv03" element={<Atv03/>} />
                 <Route path="/Atividade4/atv04" element={<Atv04/>} />
-                <Route path="/Atividade4/atv04" element={<Atv05/>} />
-                <Route path="/Atividade4/atv04" element={<Atv06/>} />
-
+                <Route path="/Atividade5/atv05" element={<Atv05/>} />
+                <Route path="/Atividade6/atv06" element={<Atv06/>} />
             </Routes>
         </BrowserRouter>
     );
